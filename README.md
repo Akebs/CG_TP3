@@ -1,9 +1,8 @@
-##### Akebs@Computação Gráfica 2020/03  
+#### Akebs@Computação Gráfica 2020/03  
 
-###### TP3
-
-### Jogo/Animação-
-
+ 
+ 
+##### TP3 Jogo/Animação
 Transformações particulares, efeitos físicos e a inclusão de modelização de objetos não rígidos, quer com vértices modulados explicitamente, quer com vértices (com massa) ligados por molas e amortizadores
 
 
@@ -21,18 +20,18 @@ Transformações particulares, efeitos físicos e a inclusão de modelização d
 
 Implementou-se uma estrutura composta por vértices ligados por molas, onde, através de oscilações harmónicas amortecidas, se pretende representar um líquido em movimento.
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/springvertices.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/springvertices.png" height="100"/>
 
 Por forma a evitar torções entre vértices foram também incluídas molas diagonais
 
 Através da equação de movimento, obtém-se a aceleração, e, por conseguinte, a velocidade e posição de um objeto. A fórmula para uma oscilação harmónica com amortecimento é a seguinte:^ [7]
 
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png" height="30"/>
 
 , a qual pode ser escrita como [7]
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f2.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f2.png" height="50"/>
 
 , onde k é a constante da elasticidade da mola, x é o vector que liga os dois extremos da mola, |x| é o comprimento de x, d é a distância em repouso da mola, b é a contante do amortecimento da mola e v é a velocidade relativa entre as extremidades da mola.
 
@@ -94,50 +93,49 @@ for ( i = 0 ; i < numSprings; ++i){
 
 ##### Resultado
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png1.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png1.png" width="720"/>
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png3.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png3.png" width="720"/>
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png6.png">
 
 ##### Efeitos de refração e reflexão do ambiente na água
 
 Por forma a retratar o efeito de reflexão e refração numa superfície não opaca introduziram-se duas texturas. Uma textura corresponde ao fundo e outra imagem corresponde à imagem reflectida nessa superfície.
 Para encontrar as coordenadas da imagem refractada é utilizado o método de Gustavo Oliveira[^8 ].
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png7.png">
+
 
 
 Evita-se a utilização das relações trigonométricas da lei de Snell , 
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f7.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f7.png" height="30"/>
 
 Estas são substituídas por um coeficiente de refração, aumentando ou diminuindo a contribuição do raio reflectido na componente final da luz incidente
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f3.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f3.png" height="30"/>
 
 
 A soma vectorial é apresentada na figura 2.
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig3.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig3.png" height="400"/>
 
 A projeção desse vector no “fundo” do liquido terá componente yy,
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f4.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f4.png" height="30"/>
 
 Tendo a profundidade p é dada pela equação
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f5.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f5.png" height="25"/>
 
 , onde pi é a profundidade em repouso, yi é a componente resultante da deslocação vertical da superfície.
 
 Resulta então
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f6.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f6.png" height="70"/>
 
 Já podemos então procurar as componentes x e z do vector de refração.
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig3.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig3.png" height="400"/>
 
 A normalização das coordenadas UV da textura é feita por interpolação, considerando como magnitude o tamanho do mapa de coordenadas, ou seja, do líquido.
 
@@ -208,27 +206,22 @@ void drawWaterText () {
 
 ##### Introdução de uma caixa de ambiente (“skybox”) e de uma esfera representando o sol
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/skybox.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png6.png" width="720"/>
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png5.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/skybox.png" width="720"/>
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png6.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png5.png" width="720"/>
 
 ##### Implementação de um sistema de lógica de jogo e deteção de colisões entre os elementos dinâmicos
 
-
-
 Para diversificar as opções de jogabilidade foram introduzidos temporizadores e mecanismos de deteção de colisão entre o barco e os objectos que possam determinar o resultado da pontuação.
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png4.png" width="720"/>
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png9.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png9.png" width="720"/>
 
 Dada a movimentação ser bidimensional, a detecção é feita por aferição da diferença entre distâncias entre os objectos e os raios de contenção atribuídos a cada um.
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png">
-
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png8.png">
-
-
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png" height="150"/>
 
 
 
@@ -254,12 +247,7 @@ void updateCameraVectors () {
 }
 ```
 
-###### Observações:
-
- A implementação conseguida ficou aquém do pretendido.
- A dificuldade em afinar o comportamento do sistema de amortecimento não permitiu garantir as movimentações horizontais dos vértices.
- A morosidade no ajuste e previsualização dos parâmetros de texturização, de propriedades dos materiais e de colorização não conduziu a um melhor resultado gráfico.
-
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png2.png" width="720"/>
 
 ##### Ambiente de execução e compilação:
 - G++
@@ -287,7 +275,10 @@ void updateCameraVectors () {
 
 
 
-##### Power_boat.obj file cedido por GrabCad Community, https://grabcad.com/library/pafu-power-boat- 9 - 5m- 1
+
+##### Power_boat.obj  
+cedido por GrabCad Community, https://grabcad.com/library/pafu-power-boat-9-5m-1
+
 
 
 ##### Compilar
@@ -296,3 +287,8 @@ g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CG_TP3.o" "..\\src\\CG_TP3.cpp"
 g++ -pthread -o CG_TP3 "src\\CG_TP3.o" -lglew32 -lopengl32 -lfreeglut -lglu
 ```
 
+
+#### Observações:
+ A implementação conseguida ficou aquém do pretendido.
+ A dificuldade em afinar o comportamento do sistema de amortecimento não permitiu garantir as movimentações horizontais dos vértices.
+ A morosidade no ajuste e previsualização dos parâmetros de texturização, de propriedades dos materiais e de colorização não conduziu a um melhor resultado gráfico.
