@@ -2,7 +2,9 @@
 
 ###### TP3
 
-### Jogo/Animação- Transformações particulares, efeitos físicos e a inclusão de modelização de objetos não rígidos, quer com vértices modulados explicitamente, quer com vértices (com massa) ligados por molas e amortizadores
+### Jogo/Animação-
+
+Transformações particulares, efeitos físicos e a inclusão de modelização de objetos não rígidos, quer com vértices modulados explicitamente, quer com vértices (com massa) ligados por molas e amortizadores
 
 
 #### Actualização sobre o anterior trabalho
@@ -19,19 +21,18 @@
 
 Implementou-se uma estrutura composta por vértices ligados por molas, onde, através de oscilações harmónicas amortecidas, se pretende representar um líquido em movimento.
 
-!springvertices.pngc
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/springvertices.png">
 
 Por forma a evitar torções entre vértices foram também incluídas molas diagonais
 
 Através da equação de movimento, obtém-se a aceleração, e, por conseguinte, a velocidade e posição de um objeto. A fórmula para uma oscilação harmónica com amortecimento é a seguinte:^ [7]
 
-!f1.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true)
 
-[![f1.png]((https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true "f1.png")](http://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true "f1.png")
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png">
 
 , a qual pode ser escrita como [7]
 
-!f2.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f2.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f2.png">
 
 , onde k é a constante da elasticidade da mola, x é o vector que liga os dois extremos da mola, |x| é o comprimento de x, d é a distância em repouso da mola, b é a contante do amortecimento da mola e v é a velocidade relativa entre as extremidades da mola.
 
@@ -92,51 +93,51 @@ for ( i = 0 ; i < numSprings; ++i){
 ```
 
 ##### Resultado
-!png1.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png1.png?raw=true)
 
-!png3.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png3.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png1.png">
 
-!png6.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png6.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png3.png">
 
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png6.png">
 
 ##### Efeitos de refração e reflexão do ambiente na água
 
 Por forma a retratar o efeito de reflexão e refração numa superfície não opaca introduziram-se duas texturas. Uma textura corresponde ao fundo e outra imagem corresponde à imagem reflectida nessa superfície.
 Para encontrar as coordenadas da imagem refractada é utilizado o método de Gustavo Oliveira[^8 ].
 
-!png7.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png7.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png7.png">
 
 
 Evita-se a utilização das relações trigonométricas da lei de Snell , 
 
-!f7.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f7.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f7.png">
 
 Estas são substituídas por um coeficiente de refração, aumentando ou diminuindo a contribuição do raio reflectido na componente final da luz incidente
 
-!f3.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f3.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f3.png">
 
 
 A soma vectorial é apresentada na figura 2.
 
-!fig2.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig2.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig2.png">
 
 A projeção desse vector no “fundo” do liquido terá componente yy,
 
-!f4.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f4.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f4.png">
 
 Tendo a profundidade p é dada pela equação
 
-!f5.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f5.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f5.png">
 
 , onde pi é a profundidade em repouso, yi é a componente resultante da deslocação vertical da superfície.
 
 Resulta então
 
-!f6.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f6.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f6.png">
 
 Já podemos então procurar as componentes x e z do vector de refração.
 
-!fig3.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig3.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig3.png">
 
 A normalização das coordenadas UV da textura é feita por interpolação, considerando como magnitude o tamanho do mapa de coordenadas, ou seja, do líquido.
 
@@ -207,25 +208,25 @@ void drawWaterText () {
 
 ##### Introdução de uma caixa de ambiente (“skybox”) e de uma esfera representando o sol
 
-!skybox.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/skybox.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/skybox.png">
 
-!png5.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png5.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png5.png">
 
-!png6.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png6.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png6.png">
 
 ##### Implementação de um sistema de lógica de jogo e deteção de colisões entre os elementos dinâmicos
 
-!fig4.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png">
 
 Para diversificar as opções de jogabilidade foram introduzidos temporizadores e mecanismos de deteção de colisão entre o barco e os objectos que possam determinar o resultado da pontuação.
 
 ##### Dada a movimentação ser bidimensional, a detecção é feita por aferição da diferença entre distâncias entre os objectos e os raios de contenção atribuídos a cada um.
 
-!fig4.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png">
 
-!png8.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png8.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png8.png">
 
-!png9.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png9.png?raw=true)
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png9.png">
 
 
 
