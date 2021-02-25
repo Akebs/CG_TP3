@@ -26,7 +26,7 @@ Por forma a evitar torções entre vértices foram também incluídas molas diag
 
 Através da equação de movimento, obtém-se a aceleração, e, por conseguinte, a velocidade e posição de um objeto. A fórmula para uma oscilação harmónica com amortecimento é a seguinte:^ [7]
 
-!f1.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true)
+!f1(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true)
 
 , a qual pode ser escrita como [7]
 
