@@ -30,7 +30,7 @@ Através da equação de movimento, obtém-se a aceleração, e, por conseguinte
 
 , a qual pode ser escrita como [7]
 
-!f2.png(/assets/f2.png?raw=true)
+!f2.png(/assets/f2.png)
 
 , onde k é a constante da elasticidade da mola, x é o vector que liga os dois extremos da mola, |x| é o comprimento de x, d é a distância em repouso da mola, b é a contante do amortecimento da mola e v é a velocidade relativa entre as extremidades da mola.
 
