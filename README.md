@@ -1,9 +1,8 @@
-## TP 3 - Jogo/Animação- Transformações particulares, efeitos físicos e a inclusão de modelização de objetos não rígidos, quer com vértices modulados explicitamente, quer com vértices (com massa) ligados por molas e amortizadores
+##### Akebs@Computação Gráfica 2020/03  
 
+###### TP3
 
-
-#### 20200318  Akebs@Computação Gráfica 2020 - Licenciatura em Engenharia Informática UAlg
-
+### Jogo/Animação- Transformações particulares, efeitos físicos e a inclusão de modelização de objetos não rígidos, quer com vértices modulados explicitamente, quer com vértices (com massa) ligados por molas e amortizadores
 
 
 #### Actualização sobre o anterior trabalho
@@ -20,17 +19,19 @@
 
 Implementou-se uma estrutura composta por vértices ligados por molas, onde, através de oscilações harmónicas amortecidas, se pretende representar um líquido em movimento.
 
-!springvertices.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/springvertices.png?raw=true)
+!springvertices.pngc
 
 Por forma a evitar torções entre vértices foram também incluídas molas diagonais
 
 Através da equação de movimento, obtém-se a aceleração, e, por conseguinte, a velocidade e posição de um objeto. A fórmula para uma oscilação harmónica com amortecimento é a seguinte:^ [7]
 
-!f1(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true)
+!f1.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true)
+
+[![f1.png]((https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true "f1.png")](http://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f1.png?raw=true "f1.png")
 
 , a qual pode ser escrita como [7]
 
-!f2.png(/assets/f2.png)
+!f2.png(https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f2.png?raw=true)
 
 , onde k é a constante da elasticidade da mola, x é o vector que liga os dois extremos da mola, |x| é o comprimento de x, d é a distância em repouso da mola, b é a contante do amortecimento da mola e v é a velocidade relativa entre as extremidades da mola.
 
@@ -62,7 +63,7 @@ Além das forças resultantes das molas presentes, são também consideradas, a 
     deltaV = p1.velocity;
     float force = (
       GROUND_TENSION * (deltaX.length() - WATER_DEPTH) +
-      GROUND_DAMPING * (math:: **DotV3** ( deltaV, deltaX ) / deltaX.length())
+      GROUND_DAMPING * (math:: DotV3 ( deltaV, deltaX ) / deltaX.length())
     );
     f1 = deltaX.normalized() * - force ;
     p1.forces.Y += f1.Y;
@@ -81,7 +82,7 @@ for ( i = 0 ; i < numSprings; ++i){
   deltaV = p1.velocity - p2.velocity;
   float force = (
     s.tension * (deltaX.length() - s.restLength) +
-    s.damping * (math:: **DotV3** ( deltaV, deltaX ) / deltaX.length())
+    s.damping * (math:: DotV3 ( deltaV, deltaX ) / deltaX.length())
   );
   f1 = - deltaX.normalized() * force;
   f2 = - f1;
