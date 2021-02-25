@@ -1,4 +1,4 @@
-// based on learnopengl.com Getting-started Camera sample code
+// based on learnopengl.com's "Getting started" camera sample code
 // https://learnopengl.com/Getting-started/Camera
 
 
