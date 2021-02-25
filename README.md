@@ -119,7 +119,7 @@ Estas são substituídas por um coeficiente de refração, aumentando ou diminui
 
 A soma vectorial é apresentada na figura 2.
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig2.png">
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig3.png">
 
 A projeção desse vector no “fundo” do liquido terá componente yy,
 
@@ -216,17 +216,19 @@ void drawWaterText () {
 
 ##### Implementação de um sistema de lógica de jogo e deteção de colisões entre os elementos dinâmicos
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png">
+
 
 Para diversificar as opções de jogabilidade foram introduzidos temporizadores e mecanismos de deteção de colisão entre o barco e os objectos que possam determinar o resultado da pontuação.
 
-##### Dada a movimentação ser bidimensional, a detecção é feita por aferição da diferença entre distâncias entre os objectos e os raios de contenção atribuídos a cada um.
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png9.png">
+
+Dada a movimentação ser bidimensional, a detecção é feita por aferição da diferença entre distâncias entre os objectos e os raios de contenção atribuídos a cada um.
 
 <img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png">
 
 <img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png8.png">
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png9.png">
+
 
 
 
