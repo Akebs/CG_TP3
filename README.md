@@ -117,13 +117,13 @@ A projeção desse vector no “fundo” do liquido terá componente yy,
 
 Tendo a profundidade p é dada pela equação
 
-<img src="./assets/f5.png" height="25"/>
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f5.png" height="25"/>
 
 , onde pi é a profundidade em repouso, yi é a componente resultante da deslocação vertical da superfície.
 
 Resulta então
 
-<img src="./assets/f6.png" height="70"/>
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f6.png" height="70"/>
 
 Já podemos então procurar as componentes x e z do vector de refração.
 
@@ -238,7 +238,7 @@ void updateCameraVectors () {
 
 
 ##### Video
-<a href="https://youtu.be/UeuFzo4uCzs"><img src="./assets/canvas.png" width="480" ></a>
+<a href="https://youtu.be/UeuFzo4uCzs"><img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/canvas.png" width="480" ></a>
 
 
 ##### Observações
