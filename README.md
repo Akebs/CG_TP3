@@ -1,10 +1,8 @@
-#### Akebs@Computação Gráfica  TP3 2020/05 
-  
-##### Jogo/Animação
+#### Akebs@Computação Gráfica: TP3 - Jogo/Animação @2020/05
 Transformações particulares, efeitos físicos e a inclusão de modelização de objetos não rígidos, quer com vértices modulados explicitamente, quer com vértices (com massa) ligados por molas e amortizadores
 
 
-#### Actualização sobre o anterior trabalho
+##### Actualização sobre o anterior trabalho
 
 - Implementação de uma estrutura de vértices com oscilações harmónicas amortecidas
 - Inclusão de efeitos de refração e reflexão do ambiente na água
@@ -12,7 +10,7 @@ Transformações particulares, efeitos físicos e a inclusão de modelização d
 - Correção do modo de anti-aliasing, de iluminação, de sombreamento, e de texturas
 - Melhorias em mostradores e menu
 
-### Descrição
+#### Descrição
 
 ##### Oscilações harmónicas amortecidas
 
