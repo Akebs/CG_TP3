@@ -91,7 +91,6 @@ for ( i = 0 ; i < numSprings; ++i){
 }
 ```
 
-##### Resultado
 
 <img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png1.png" width="720"/>
 
@@ -104,8 +103,6 @@ Por forma a retratar o efeito de reflexão e refração numa superfície não op
 Para encontrar as coordenadas da imagem refractada é utilizado o método de Gustavo Oliveira[^8 ].
 
 
-
-
 Evita-se a utilização das relações trigonométricas da lei de Snell , 
 
 <img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f7.png" height="30"/>
@@ -113,7 +110,6 @@ Evita-se a utilização das relações trigonométricas da lei de Snell ,
 Estas são substituídas por um coeficiente de refração, aumentando ou diminuindo a contribuição do raio reflectido na componente final da luz incidente
 
 <img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f3.png" height="30"/>
-
 
 A soma vectorial é apresentada na figura 2.
 
@@ -125,13 +121,13 @@ A projeção desse vector no “fundo” do liquido terá componente yy,
 
 Tendo a profundidade p é dada pela equação
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f5.png" height="25"/>
+<img src="./assets/f5.png" height="25"/>
 
 , onde pi é a profundidade em repouso, yi é a componente resultante da deslocação vertical da superfície.
 
 Resulta então
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f6.png" height="70"/>
+<img src="./assets/f6.png" height="70"/>
 
 Já podemos então procurar as componentes x e z do vector de refração.
 
@@ -140,8 +136,6 @@ Já podemos então procurar as componentes x e z do vector de refração.
 A normalização das coordenadas UV da textura é feita por interpolação, considerando como magnitude o tamanho do mapa de coordenadas, ou seja, do líquido.
 
 ##### Algoritmo implementado
-
-
 ```
 // Compute texture coordinates
 void genTexCoordinates () {
@@ -223,9 +217,6 @@ Dada a movimentação ser bidimensional, a detecção é feita por aferição da
 
 <img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/fig4.png" height="150"/>
 
-
-
-
 ##### Introdução de uma classe para a camara
 
  O sistema de posicionamento da câmara foi revisto por forma a permitir a sua localização em função dos eixos transversal e longitudinal e respectivos ângulos de Euler[9].
@@ -248,6 +239,17 @@ void updateCameraVectors () {
 ```
 
 <img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png2.png" width="720"/>
+
+
+#### Video
+<a href="https://youtu.be/UeuFzo4uCzs"><img src="./assets/canvas.png" width="480" ></a>
+
+
+#### Observações
+ A implementação conseguida ficou aquém do pretendido.
+ A dificuldade em afinar o comportamento do sistema de amortecimento não permitiu garantir as movimentações horizontais dos vértices.
+ A morosidade no ajuste e previsualização dos parâmetros de texturização, de propriedades dos materiais e de colorização não conduziu a um melhor resultado gráfico.
+
 
 ##### Ambiente de execução e compilação:
 - G++
@@ -288,7 +290,4 @@ g++ -pthread -o CG_TP3 "src\\CG_TP3.o" -lglew32 -lopengl32 -lfreeglut -lglu
 ```
 
 
-#### Observações:
- A implementação conseguida ficou aquém do pretendido.
- A dificuldade em afinar o comportamento do sistema de amortecimento não permitiu garantir as movimentações horizontais dos vértices.
- A morosidade no ajuste e previsualização dos parâmetros de texturização, de propriedades dos materiais e de colorização não conduziu a um melhor resultado gráfico.
+
