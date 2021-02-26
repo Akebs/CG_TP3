@@ -1,8 +1,7 @@
-#### Akebs@Computação Gráfica 2020/03  
-
+#### Akebs@Computação Gráfica  TP3 2020/05 
  
  
-##### TP3 Jogo/Animação
+##### Jogo/Animação
 Transformações particulares, efeitos físicos e a inclusão de modelização de objetos não rígidos, quer com vértices modulados explicitamente, quer com vértices (com massa) ligados por molas e amortizadores
 
 
