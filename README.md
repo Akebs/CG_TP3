@@ -1,6 +1,5 @@
 #### Akebs@Computação Gráfica  TP3 2020/05 
- 
- 
+  
 ##### Jogo/Animação
 Transformações particulares, efeitos físicos e a inclusão de modelização de objetos não rígidos, quer com vértices modulados explicitamente, quer com vértices (com massa) ligados por molas e amortizadores
 
@@ -157,7 +156,7 @@ for (r = 0 ; r <= MAP_SIZE_ZZ ; ++r) {
 
 Para a renderização recorreu-se à biblioteca Glew para permitir o multitextering.
 
-### Usaram-se as seguintes propriedades de texturização
+Usaram-se as seguintes propriedades de texturização
 ```
 void drawWaterText () {
   // Refracted ground
@@ -240,11 +239,11 @@ void updateCameraVectors () {
 <img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/png2.png" width="720"/>
 
 
-#### Video
+##### Video
 <a href="https://youtu.be/UeuFzo4uCzs"><img src="./assets/canvas.png" width="480" ></a>
 
 
-#### Observações
+##### Observações
  A implementação conseguida ficou aquém do pretendido.
  A dificuldade em afinar o comportamento do sistema de amortecimento não permitiu garantir as movimentações horizontais dos vértices.
  A morosidade no ajuste e previsualização dos parâmetros de texturização, de propriedades dos materiais e de colorização não conduziu a um melhor resultado gráfico.
