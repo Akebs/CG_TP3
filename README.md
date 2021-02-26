@@ -101,7 +101,7 @@ Para encontrar as coordenadas da imagem refractada é utilizado o método de Gus
 
 Evita-se a utilização das relações trigonométricas da lei de Snell , 
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f7.png" height="30"/>
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f7.png" height="25"/>
 
 Estas são substituídas por um coeficiente de refração, aumentando ou diminuindo a contribuição do raio reflectido na componente final da luz incidente
 
@@ -123,7 +123,7 @@ Tendo a profundidade p é dada pela equação
 
 Resulta então
 
-<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f6.png" height="70"/>
+<img src="https://github.com/Akebs/CG_TP3/blob/master/CG_TP3/assets/f6.png" height="60"/>
 
 Já podemos então procurar as componentes x e z do vector de refração.
 
