@@ -1,4 +1,4 @@
-// besed on https://www.gamasutra.com/view/feature/131531/refractive_texture_mapping_part_
+// based on https://www.gamasutra.com/view/feature/131531/refractive_texture_mapping_part_
 
 #include <GL/glew.h>
 #include <GL/glut.h>
