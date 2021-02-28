@@ -274,8 +274,9 @@ void updateCameraVectors () {
 
 
 
-##### Power_boat.obj  
-cedido por GrabCad Community, https://grabcad.com/library/pafu-power-boat-9-5m-1
+##### Objectos
+  Power_boat.obj - cedido por GrabCad Community, https://grabcad.com/library/pafu-power-boat-9-5m-1
+  Todos os restantes objectos criados em Blender 2.82
 
 
 
